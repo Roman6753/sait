@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Rancho;
+    src: url(../fonts/Rancho/Rancho-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 200;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #770000;
+    --color-red-svetl: #830000;
+    --color-red-nav: #ee0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3vw;
+    background-color: var(--color-red);
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo span{
+    font-size: 35px;
+    color: var(--color-red-nav);
+    font-family: Rancho;
+}
+
+.logo img {
+    margin-right: 5px;
+    height: 45px;
+}
+
+.poisc input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 400px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 10px;
+}
+
+
+.vhot a{
+    padding: 10px 3vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 40px;
+}
+
+.user img{
+    padding: 10px 3vw;
+    height: 75px;
+}
+
+main section.shilm {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.photo article {
+    display: flex;
+    align-items: end;
+    
+}
+
+main section.shilm span{
+    font-size: 24px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.photo img {
+    width: 30%;
+    height: 40%;
+}
+
+main section.shilm hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0px solid;
+    margin: 1em 0;
+    border-left: 1px solid var(--color-white);
+    height: 1000px;
+}
+
+main section.novos hr{
+    width: 100%;
+}
+
+main section.novost{
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.novost div img{
+    width: 17px;
+    height: 28px;
+}
+
+main section.novost div span{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main div.conte {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+main article.cont{
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+main article.cont img{
+    width: 500%;
+    height: 500%;
+}
+
+main div.conte p{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.conez{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-red);
+    padding: 30px 3vw;
+}
+
+main div.ohor span{
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section div.cnop a{
+    padding: 50px;
+    padding-top: 50px;
+}
+
+main section.cart{
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+}
+
+main section.cart img {
+    max-width: 100%;
+    height: auto;
+}
