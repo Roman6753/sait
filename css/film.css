@@ -51,8 +51,8 @@ nav.menu.visible {
 }
 
 header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 3vw;
     background-color: var(--color-red);
@@ -89,7 +89,6 @@ header div.logo span{
     background-color: var(--color-black);
     color: var(--color-white);
     border-radius: 40px;
-    font-family: Inter;
 }
 
 .user img{
@@ -97,103 +96,52 @@ header div.logo span{
     height: 75px;
 }
 
-main section.shilm {
-    display: grid;
-    grid-template-columns: 1fr 10px 2fr;
+main section.film{
     background-color: var(--color-red-svetl);
-    padding: 20px 3vw;
+    display: grid;
+    padding: 40px 3vw;
 }
 
-main section.photo article {
-    align-items: end;
+main section.film div.cont{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
 }
 
-main div.glav img{
-    height: 30px;
-}
-main section.shilm span{
-    font-size: 24px;
+main section.film div.cont div p{
+    font-size: 30px;
     font-family: Inter;
     color: var(--color-white);
 }
 
-main section.photo img {
-    width: 30%;
-    height: 40%;
-}
-
-main section.shilm hr{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 0px solid;
-    margin: 1em 0;
-    border-left: 1px solid var(--color-white);
-    height: 1000px;
-}
-
-main section.novos hr{
-    width: 100%;
-}
-
-main section.novost{
-    background-color: var(--color-red-svetl);
-    padding: 20px 3vw;
-}
-
-main section.novost div.kino img{
-    width: 17px;
-    height: 28px;
-}
-
-main section.novost div span{
-    font-size: 20px;
-    font-family: Inter;
-    color: var(--color-white);
-}
-
-main div.conte {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: flex-start;
-}
-  
-main article.cont div.img{
-    background-color: rgba(255, 255, 255, 0.233);
-    width: 150px;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-  
-main article.cont img{
-    width: 60px;
-    height: 80px;
-}
-
-main article.cont div.data{
-    background-color: rgba(255, 255, 255, 0.233);
-    width: 150px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-main article.cont p{
+main section.film div.cont div h1{
     font-size: 15px;
     font-family: Inter;
     color: var(--color-white);
 }
 
-main article.cont h1{
-    font-size: 18px;
-    font-family: Inter;
+main section.film div.cont a{
     color: var(--color-white);
+    background-color: var(--color-black);
+    font-size: 20px;
+    font-family: Inter;
+    padding: 15px 1vw;
+    border-radius: 40px;
+    font-family: Inter;
+    border-color: var(--color-black);
 }
+
+main section.film div.cont div.ozen a{
+    color: var(--color-white);
+    background-color: var(--color-black);
+    font-size: 15px;
+    font-family: Inter;
+    padding: 10px 1vw;
+    border-radius: 40px;
+    font-family: Inter;
+    border-color: var(--color-black);
+}
+
+
 
 main section.conez{
     display: grid;
@@ -263,11 +211,4 @@ main section.carta ul span{
 main section.carta div.pril{
     padding: 0 30vw;
     padding-top: 20px;
-}
-
-@media screen and (max-width: 390px){
-    header>div{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
 }
