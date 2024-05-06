@@ -195,6 +195,36 @@ main article.cont h1{
     color: var(--color-white);
 }
 
+main article.cont h2{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main article.cont h3{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main article.cont h4{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main article.cont h5{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main article.cont h6{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
 main section.conez{
     display: grid;
     grid-template-columns: 4fr  1fr;
