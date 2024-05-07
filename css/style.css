@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav.menu{
     display: none;
     background-color: var(--color-red-svetl);
@@ -104,7 +108,8 @@ main section.shilm {
     padding: 20px 3vw;
 }
 
-main section.photo article {
+main section.photo article{
+    display: grid;
     align-items: end;
 }
 
@@ -117,7 +122,7 @@ main section.shilm span{
     color: var(--color-white);
 }
 
-main section.photo img {
+main section.photo img{
     width: 30%;
     height: 40%;
 }
@@ -132,7 +137,7 @@ main section.shilm hr{
     height: 1000px;
 }
 
-main section.novos hr{
+main section.novost hr{
     width: 100%;
 }
 
@@ -297,7 +302,50 @@ main section.carta div.pril{
 
 @media screen and (max-width: 390px){
     header>div{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: none;
     }
 
+    main section.shilm div.glav{
+        display: none;
+    }
+
+    main section.shilm hr{
+        display: none;
+    }
+
+    main section.shilm div.photo article{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    main section.shilm div.photo article img{
+        width: 150px;
+    }
+
+    main section.novost div{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    main section.conez{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    main section.conez div.cart img{
+        width: 100%;
+    }
+
+    main section.conez div.cnop{
+        display: grid;
+        margin: 0 auto;
+    }
+
+    main section.carta .pril{
+        display: grid;
+        justify-self: start;
+        column-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+    }
 }
