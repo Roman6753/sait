@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Rancho;
+    src: url(../fonts/Rancho/Rancho-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 200;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #770000;
+    --color-red-svetl: #830000;
+    --color-red-nav: #ee0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.menu{
+    display: none;
+    background-color: var(--color-red-svetl);
+    height: 100%;
+    width: 100%;
+    padding: 10px 3vw;
+    
+}
+  
+nav.menu a{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+    margin-left: 80%;
+    position: absolute;
+    text-align: end;
+}
+
+nav.menu li{
+    color: var(--color-red);
+}
+
+nav.menu.visible {
+    display: block;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    padding: 10px 3vw;
+    background-color: var(--color-red);
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo span{
+    font-size: 35px;
+    color: var(--color-red-nav);
+    font-family: Rancho;
+}
+
+.logo img {
+    margin-right: 5px;
+    height: 45px;
+}
+
+.poisc input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 400px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 10px;
+}
+
+
+.vhot a{
+    padding: 10px 3vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 40px;
+    font-family: Inter;
+}
+
+.user img{
+    padding: 10px 3vw;
+    height: 75px;
+}

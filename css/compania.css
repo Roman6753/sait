@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Rancho;
+    src: url(../fonts/Rancho/Rancho-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 200;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #770000;
+    --color-red-svetl: #830000;
+    --color-red-nav: #ee0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.menu{
+    display: none;
+    background-color: var(--color-red-svetl);
+    height: 100%;
+    width: 100%;
+    padding: 10px 3vw;
+    
+}
+  
+nav.menu a{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+    margin-left: 80%;
+    position: absolute;
+    text-align: end;
+}
+
+nav.menu li{
+    color: var(--color-red);
+}
+
+nav.menu.visible {
+    display: block;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    padding: 10px 3vw;
+    background-color: var(--color-red);
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo span{
+    font-size: 35px;
+    color: var(--color-red-nav);
+    font-family: Rancho;
+}
+
+.logo img {
+    margin-right: 5px;
+    height: 45px;
+}
+
+.poisc input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 400px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 10px;
+}
+
+
+.vhot a{
+    padding: 10px 3vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 40px;
+    font-family: Inter;
+}
+
+.user img{
+    padding: 10px 3vw;
+    height: 75px;
+}
+
+hr{
+    color: var(--color-white);
+}
+
+main section.compan{
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.compan span{
+    font-size: 24px;
+    color: var(--color-white);
+    font-family: Inter;
+}
+
+main section.compan img{
+    height: 24px;
+}
+
+main section.contak{
+    display: grid;
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.contak span{
+    font-size: 24px;
+    color: var(--color-white);
+    font-family: Inter;
+    padding: 10px;
+}
+main section.contak div.adres{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+main section.contak div.adres p{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+}
+
+main section.contak div.adres h1{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+    padding: 12px;
+}
+
+main section.contak div.adres img{
+    height: 20px;
+}
+
+main section.contak div.tel{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+}
+
+main section.contak div.tel p{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+}
+
+main section.contak div.tel h2{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 15px;
+    padding: 12px;
+}
+
+main section.contak div.pohct{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+main section.contak div.pohct p{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+}
+
+main section.contak div.pohct h3{
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 15px;
+    padding: 12px;
+}
+
+main section.contak p{
+    text-align: left;
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+    padding: 10px;
+}
+
+main section.conez{
+    display: grid;
+    grid-template-columns: 4fr  1fr;
+    background-color: var(--color-red);
+    padding: 30px 3vw;
+}
+
+main div.ohor span{
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section div.cnop a{
+    padding: 30px 4vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 15px;
+    font-family: Inter;
+    font-size: 20px;  
+}
+
+main section.cart{
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+}
+
+main section.cart img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+main section.carta{
+    background-color: var(--color-red);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 3vw;
+}
+
+main section.carta div.set{
+    padding: 20px 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul li{
+    color: var(--color-red);
+}
+
+main section.carta ul span{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.carta div.pril{
+    padding: 0 30vw;
+    padding-top: 20px;
+}
+
