@@ -96,3 +96,105 @@ header div.logo span{
     padding: 10px 3vw;
     height: 75px;
 }
+
+main section.pravil{
+    background-color: var(--color-red-svetl);
+    padding: 30px 3vw;
+}
+
+main section.pravil span{
+    font-size: 30px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.pravil p{
+    margin-top: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+    font-size: 25px;
+}
+
+main section.pravil h1{
+    margin-top: 10px;
+    font-family: Inter;
+    color: var(--color-white);
+    font-size: 18px;
+}
+
+main section.pravil ul li{
+    font-family: Inter;
+    color: var(--color-white);
+    padding: 0px 1vw;
+    font-size: 18px;
+}
+
+main section.conez{
+    display: grid;
+    grid-template-columns: 4fr  1fr;
+    background-color: var(--color-red);
+    padding: 30px 3vw;
+}
+
+main div.ohor span{
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section div.cnop a{
+    padding: 30px 4vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 15px;
+    font-family: Inter;
+    font-size: 20px;  
+}
+
+main section.cart{
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+}
+
+main section.cart img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+main section.carta{
+    background-color: var(--color-red);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 3vw;
+}
+
+main section.carta div.set{
+    padding: 20px 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul li{
+    color: var(--color-red);
+}
+
+main section.carta ul span{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.carta div.pril{
+    padding: 0 30vw;
+    padding-top: 20px;
+}

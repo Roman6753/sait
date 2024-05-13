@@ -1,3 +1,4 @@
+//Меню//
 const userIcon = document.querySelector('.user');
 const menu = document.querySelector('.menu');
 
